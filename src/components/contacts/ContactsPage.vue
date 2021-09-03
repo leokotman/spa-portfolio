@@ -8,7 +8,7 @@
   </ul>
   <ul>
     <li v-for="link in webLinks" :key="link.name">
-      {{ link.name }} - {{ link.link }}
+      <a :href="link.link">{{ link.name }}</a>
     </li>
   </ul>
 </template>
